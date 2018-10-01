@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Computer Usage Monitor
+Comment=Keep track of your screen time.
+Icon=utilities-system-monitor
+Exec=$HOME/bin/usage show
+Path=
+Terminal=false
+StartupNotify=false
