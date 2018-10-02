@@ -4,9 +4,25 @@ if [ ! -d "$DIRECTORY" ]; then
   mkdir $DIRECTORY
 fi
 
+VERSION="1.0"
 EMAIL="your@email.com"
 
 case $1 in
+	help)
+		echo ""
+		echo "Usage - The xorg program usage monitor."
+		echo "Version $VERSION"
+		echo "----------------------------------------"
+		echo "Usage: usage <option>"
+		echo "Options:"
+		echo "	help - shows this help page"
+		echo "	track - track program usage"
+		echo "	show - shows recorded program usage"
+		echo "	clear - clears recorded usage data"
+		echo "	send - email the program usage data"
+		echo "----------------------------------------"
+		echo ""
+		;;
 	track)
 		cd $DIRECTORY
 		while true; do 
@@ -31,6 +47,18 @@ case $1 in
 		;;
 		
 	*)
-		echo "Invalid Option"
+		echo ""
+		echo "Usage - The xorg program usage monitor."
+		echo "Version $VERSION"
+		echo "----------------------------------------"
+		echo "Usage: usage <option>"
+		echo "Options:"
+		echo "	help - shows this help page"
+		echo "	track - track program usage"
+		echo "	show - shows recorded program usage"
+		echo "	clear - clears recorded usage data"
+		echo "	send - email the program usage data"
+		echo "----------------------------------------"
+		echo ""
 		;;
 esac
