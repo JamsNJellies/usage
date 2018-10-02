@@ -1,4 +1,8 @@
 # usage
+
+![Usage Help]
+(images/help.png)
+
 A small application usage monitor script based on thyme. Designed for linux and xorg.
 Usage has an email function usingg neomutt and can email your computer usage to someone, if you would like to use this featuer install neomutt and edit the usage script to configure your email.
 
